@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Position</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            text-align: center;
+            margin-top: 40px;
+        }
+        div{
+            display: inline-block;
+             border: 2px solid black;
+             text-align: center;
+             padding-right: 20px;
+             padding-bottom: 30px;
+             border-radius: 10px;
+             
+            
+            
+        }
+        .one{
+            border: 2px solid rgb(225, 1, 1);
+            text-align: justify;
+            padding:0px 0px 40px 0px;
+            width: 200px;
+            margin-top: 80px;
+            margin-left: 30px;
+            border-radius: 10px;
+        }
+        
+        
+        .two{
+            border: 2px solid rgb(225, 1, 1);
+            text-align: justify;
+            padding:0px 0px 40px 0px;
+            width: 200px;
+            margin-left: 30px;
+            position: relative;
+            bottom: 40px;
+            border-radius: 10px;
+            
+        }
+        .three{
+            border: 2px solid rgb(225, 1, 1);
+            text-align: justify;
+            padding:0px 0px 40px 0px;
+            width: 200px;
+            margin-left: 30px;
+            margin-right: 30px;
+            border-radius: 10px;
+         }
+        ul li{
+            list-style-type: none;
+        }
+       .listThree li::before{
+            content: "✔️";
+        }
+       .listTwo{
+            list-style:"✔️" ;
+            
+        }
+        .listT{
+            list-style:"❌" ;
+        }
+        
+        h3{
+            text-align: center;
+            padding: 10px;
+           margin: 0px 0px 10px 0px;
+          
+        }
+        
+       div span{
+           margin-left: 80px ;
+           font-weight: bolder;
+        }
+        button{
+            margin-left: 50px ;
+            background-color: rgb(65, 255, 65);
+            padding: 10px;
+           text-align: center;
+            border-radius: 10px;
+            margin-top: 4px;
+        }
+        li{
+            margin-left: 30px;
+        }
+        .head1{
+            background-color: rgb(65, 255, 65);
+        }
+        .head2{
+            background-color: rgb(225, 1, 1);
+        }
+        .head3{
+            background-color: rgb(65, 255, 65);
+        }
+       
+    </style>
+</head>
+<body>
+    <div>
+        <div class="one">
+            <h3 class="head1">Basic</h3>
+            <ul class="listOne">
+                <li class="listTwo">Hosting</li><br>
+                <li class="listT">Domain</li><br>
+                <li class="listTwo">1 GB Space</li><br>
+                <li class="listT">Free SSL</li><br>
+                <li class="listTwo">1 Website Host</li><br>
+            </ul>
+           
+            <span>$5</span><br>
+          <button type="button">BUY NOW</button>
+
+        </div>
+        <div class="two">
+            <h3 class="head2">Standard</h3>
+            <ul class="listTwo">
+                <li class="listTwo">Hosting</li><br>
+                <li class="listTwo">Domain</li><br>
+                <li class="listTwo">1 GB Space</li><br>
+                <li class="listT">Free SSL</li><br>
+                <li class="listTwo">1 Website Host</li>
+            </ul>
+           
+                <span>$10</span><br>
+                <button type="button">BUY NOW</button>
+    
+
+        </div>
+        <div class="three">
+            <h3 class="head3">Standard</h3>
+            <ul class="listThree">
+                <li>Hosting</li><br>
+                <li>Domain</li><br>
+                <li>1 GB Space</li><br>
+                <li>Free SSL</li><br>
+                <li>1 Website Host</li>
+            </ul>
+            <span>$20</span><br>
+            <button type="button">BUY NOW</button>
+
+        </div>
+    </div>
+    
+</body>
+</html>
